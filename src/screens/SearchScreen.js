@@ -21,8 +21,7 @@ const SearchScreen = () => {
         term = {term} 
         onTermChange = {(newTerm) => setTerm(newTerm)}
         onTermSubmit = {() => searchApi(term)}/>
-        {errorMessage ? <Text>{errorMessage}</Text> : null}
-        <Text>We have found {results.length} results</Text>
+        {errorMessage ? <Text>{errorMessage}</Text> : null};
         <ScrollView>
             <ResultList results = {filterResultsByPrice('$')} title = "Cost Effective"/>
             <ResultList results = {filterResultsByPrice('$$')} title = "Bit pricier"/>

@@ -30,6 +30,7 @@ const styles = StyleSheet.create({
         borderRadius : 5,
         marginTop : 15,
         flexDirection : 'row',
+        marginBottom : 10,
     },
     searchTextStyle : {
         flex : 1,
